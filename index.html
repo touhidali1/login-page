@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Informations</h1>
+        <form id="infoForm">
+            <div class="size">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="e.g. Kabir Ahmad" name="name" required>
+            </div>
+            <div class="size">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="e.g. 21" name="age" required>
+            </div>
+            <div class="size">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="e.g. kabirahmad985@gmail.com" name="email" required>
+            </div>
+            <button type="submit">Submit</button> 
+        </form>
+        <div id="displayData" style="display: none;">
+            <h2>Submitted Data:</h2>
+            <p><strong>Name : </strong><span>name</span></p>
+            <p><strong>Age : </strong><span>age</span></p>
+            <p><strong>Email : </strong><span>email</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
